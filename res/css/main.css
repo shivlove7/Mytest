@@ -1,0 +1,384 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 6, 2016, 1:43:37 PM
+    Author     : Shiv 007
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+::selection {
+	color: #fff;
+	background: #f676b2; /* Chrome/ Opera/ Safari/ IE9 */
+}
+::-moz-selection {
+	color: #fff;
+	background: #f676b2; /* Firefox */
+}
+
+body {
+        background: url(../pics/back.png) repeat;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	text-align: left;
+	text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+        
+}
+/*------------------------------------------------------------------------------*/
+
+
+/* 
+Container for search-box and Logout
+*/
+.top_label{
+    margin-bottom: 20px;
+    height: 55px;
+    width: 100%;
+    background: #fff;
+    
+    border-bottom: 1px solid #46b3d3;
+	
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+     
+    
+    /* 
+    Gradient Created Online at http://www.colorzilla.com/
+    Permalink - use to edit and share this gradient: 
+    http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density 
+    */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+/*
+Search-Box
+*/
+#search_box{
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-top: 12px;
+    border-radius: 15px;
+    height: 25px;
+    width: 180px;
+    padding: 0px 15px 0px 15px;
+    
+}
+
+/*
+Logout using Image
+*/
+#logoutimg{
+    float:right;
+    margin-right: 170px;
+    margin-top: 1px;
+    border: 3px solid #46b3d3;
+    border-radius: 7px;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*
+Setting up proper Heading image and logo
+*/
+.logo{
+   width:1000px;
+   margin: auto;
+   height: 174px;
+   background: url(../pics/logo.png) no-repeat;   
+}
+
+.logo #twit1logo{
+   margin-top: 40px;
+   float: right;
+   width: 180px;
+   height: 174px;
+   background-image: url(../pics/twit1.png);
+   margin-right: 15px;
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*
+Central body containing Profile, Tweets and Followers
+*/
+#main_wrapper{
+    width: 1000px;
+    margin: auto;
+}
+
+/*
+Container for User Profile
+*/
+.profile_box {
+    width: 300px;
+    height: 230px;
+    word-wrap: break-word; 
+    overflow: hidden;
+    float: left;
+    margin-left: 50px;
+    
+    position: relative;
+    
+    /*background: #f3f3f3;*/
+    background: #fff;
+    border: 1px solid #46b3d3;
+    border-radius: 8px;
+	
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+/*
+User's Banner
+*/
+#banner{
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    position: absolute;
+    
+    
+}
+/*
+User's Profile Pic
+*/
+#userimg{
+    float: left;
+    border: 3px solid #fff;
+    border-radius: 7px;
+    margin-top: 70px;
+    margin-left: 10px;
+    position: absolute;
+}
+/*
+User's Name
+*/
+.profile_box h3{
+    width: 195px;
+    margin-top: 110px;
+    margin-left: 100px;
+    word-wrap: break-word;
+    font-family: 'Bree Serif', serif;
+}
+/*
+User's Screen Name
+*/
+.profile_box span{
+    position: absolute;
+    margin-top: -20px;
+    width: 195px;
+    margin-left: 100px;
+    word-wrap: break-word;
+    font-family: 'Bree Serif', serif;
+    /*color: #678889;*/
+    color: #66757f;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    font-size: 13px;
+    
+    
+}
+/*
+Next few properties contain style for Showing No. of Follwers, 
+Following and Total Tweets of user inside the Profile container
+*/
+#ufollowers{
+    position: absolute;
+    font-family: 'Bree Serif', serif;
+    color: #66757f;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+#ufollowers #ufollowers_cnt{
+    font-size: 18px;
+    color: #9D582E; 
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+#ufollowing #ufollowing_cnt{
+    font-size: 18px;
+    color: #9D582E;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+#usr_tweets #usr_tweets_cnt{
+    font-size: 18px;
+    color: #9D582E;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+#ufollowing{
+    position: absolute;
+    font-family: 'Bree Serif', serif;
+    color: #66757f;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    font-size: 15px;
+    margin-left: 120px;
+    margin-top: 8px;
+    
+}
+
+#usr_tweets{
+    position: absolute;
+    font-family: 'Bree Serif', serif;
+    color: #66757f;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    font-size: 15px;
+    margin-left: 220px;
+    margin-top: 8px;
+}
+/*
+End of User Profile Container
+*/
+
+/*
+The container for User's Tweets
+*/
+.container{
+    	width: 615px;
+        height: 500px;
+	margin-left: 382px;
+        margin-top: 40px; 
+	position: relative;
+	
+	background: #F5EEEA;
+	border: 1px solid #46b3d3;
+	border-radius: 15px;
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.container .header h1{
+        float: left;
+    	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+        margin-left: 20px;
+	font-size: 35px;
+	line-height:34px;
+        padding-left:15px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	margin-bottom: 10px;
+} 
+
+/*
+Slider containing Slides (slideshow happens here)
+*/
+#slider {
+    margin-left: 35px;
+    width: 550px;
+    height: 393px;
+    overflow: hidden;           
+}
+/*
+Styling ul
+*/
+#slider .slides {
+    display: block;
+    width: 505px;
+    height: 4000px;
+    margin: 0;
+    padding: 0;    
+}
+/*
+Styling Each slide i.e. Tweets
+*/
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 495px;
+    height: 129px;
+    background: #fff;
+    
+    padding-left: 20px;
+    padding-right: 15px; 
+    word-wrap: break-word;
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+    
+    
+    border: 1px solid #D7BCAB;
+    border-radius: 15px;
+    
+    
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    
+    
+}
+
+.container #arrow_up{
+  float: right;
+  
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #414848;;
+  
+  position: absolute;
+  margin-top: 215px;
+  margin-left: 570px;
+  cursor: pointer;  
+}
+
+.container #arrow_down{
+  float: right;
+  
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #414848;
+  
+  position: absolute;
+  margin-top: 295px;
+  margin-left: 570px;
+  cursor: pointer;      
+}
+
+/*
+The container for showing list of Followers
+*/
+.followers {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 40px;
+    
+    background: #fff;
+    border: 1px solid #46b3d3;
+    border-radius: 10px;
+	
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+/*------------------------------------------------------------------------------*/
+
+
+/*
+Footer
+*/
+.bottom-box {
+    width: 1000px;
+    height: 100px;
+    margin: 70px auto;
+    border-top: 3px solid #414848;
+}
+
