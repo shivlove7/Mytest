@@ -82,6 +82,7 @@ The Home Page
         <link rel="stylesheet" href="res/css/main.css">
         <script src="res/script/jquery-2.2.4.js"></script>
         <script type="text/javascript" src="res/script/main.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="top_label">
