@@ -59,9 +59,6 @@ if (!isset($_SESSION['access_token'])) {
             }
         }
      
-        for($i=0;$i<$start;$i++){
-           echo $myfollowers[$i] . '<br>';
-        }
         
 
 	// getting recent tweeets by user 'Shahrukh Khan' on twitter
