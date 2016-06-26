@@ -11,5 +11,5 @@ if (isset($_REQUEST['oauth_verifier'], $_REQUEST['oauth_token']) && $_REQUEST['o
 	$access_token = $connection->oauth("oauth/access_token", array("oauth_verifier" => $_REQUEST['oauth_verifier']));
 	$_SESSION['access_token'] = $access_token;
 	// redirect user back to HomePage page
-	header('Location: https://github.com/shivlove7/Mytest/blob/master/HomePage.php');
+	header('Location: https://myglt.herokuapp.com/HomePage.php');
 }
