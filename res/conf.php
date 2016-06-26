@@ -11,4 +11,4 @@
  */
 define('CONSUMER_KEY', 'X0t62RsF7aJjyBQOoPworYylU');
 define('CONSUMER_SECRET', 'U4kFZIQKDxVkgLYePl2l3iOc2nBYk0zuqy60IjESVC8LbCYs3I');
-define('OAUTH_CALLBACK', 'http://localhost/temp/callback.php');
+define('OAUTH_CALLBACK', 'callback.php');
